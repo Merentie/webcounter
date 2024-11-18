@@ -14,3 +14,9 @@ When button pressed twice the counter is two
     Click Button  Paina
     Click Button  Paina
     Page Should Contain  nappia painettu 2 kertaa
+
+When value is set to 666 the counter is 666
+    Go To  ${HOME_URL}
+    Input Text  amount  666
+    Click Button  aseta
+    Page Should Contain  nappia painettu 666 kertaa
